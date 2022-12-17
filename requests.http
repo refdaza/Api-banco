@@ -1,0 +1,37 @@
+###
+POST http://localhost:9000/api/clientes HTTP/1.1
+Content-Type: application/json
+
+{
+    "nomb_cliente": "Cristina Mendez",
+    "telefono": 7892561790,
+    "ciudad": "Veracruz",
+    "calle": "San Juan",
+    "numero": 1770,
+    "estado": "Veracruz",
+    "fecha_nacimiento": "31/11/1990"
+}
+
+
+### 
+GET http://localhost:9000/api/clientes  HTTP/1.1
+
+###
+GET http://localhost:9000/api/clientes/639be21a7e478be93b7357dd HTTP/1.1
+
+
+###
+PUT  http://localhost:9000/api/clientes/639be23e7e478be93b7357e0 HTTP/1.1
+Content-Type: application/json
+{
+    "nomb_cliente": "Cristina Mendez 2323",
+    "telefono": 7892561790,
+    "ciudad": "Veracruz",
+    "calle": "San Juan",
+    "numero": 1770,
+    "estado": "Veracruz",
+    "fecha_nacimiento": "31/11/1990"
+}
+
+###
+DELETE http://localhost:9000/api/clientes/639be21a7e478be93b7357dd HTTP/1.1
